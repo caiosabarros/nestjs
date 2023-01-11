@@ -57,6 +57,24 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+#Explanation:
+Steps to Develop the CVM nest application:
+
+Database connection with TypeORM
+Create Entity and Repo -> repo é criado automaticamente
+ValidationPipe on main.ts
+Escrever user.service.ts
+Escrever user.entity.ts
+
+
+Request -> request with body is sent
+ ValidationPipe -> request is validated 
+<-> CreateUserDto -> validated through the DTO 
+-> UsersController -> then after validated, the method and functions in controller are called
+-> UsersService -> function in service is called
+User Entity -> creates instance of this kind in the DB - this is like a schema. 
+UsersRepository -> uses instance to save it in database
+ SQLiteDB
 
 ## Support
 
